@@ -25,7 +25,7 @@ var url = flag.String("url", "amqp:///", "AMQP url for both the publisher and su
 const exchange = "pubsub"
 
 // message is the application type for a message.  This can contain identity,
-// or a reference to the recevier chan for further demuxing.
+// or a reference to the receiver chan for further demuxing.
 type message []byte
 
 // session composes an amqp.Connection with an amqp.Channel
